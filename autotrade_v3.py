@@ -398,7 +398,7 @@ def make_decision_and_execute():
 if __name__ == "__main__":
     initialize_db()
     # testing
-    # schedule.every().minute.do(make_decision_and_execute)
+     schedule.every().minute.do(make_decision_and_execute)
 
     # Schedule the task to run at 00:01
     schedule.every().day.at("00:01").do(make_decision_and_execute)
